@@ -15,3 +15,6 @@ initial app, using local master (otherwise got error) for quick run
 	  val data = 1 to 10000; val distData = spark.sparkContext.parallelize(data); distData.filter(_ < 10).collect()
 
 done.
+
+in case running under hadoop, setup winutils/bin/xxx, and setup environment HADOOP_HOME as path to winutils (not include bin)
+
